@@ -1,4 +1,4 @@
-class Insert_at_end{
+class Insert_at_head{
     public  static class node{
         int data;
         node next;
@@ -10,17 +10,16 @@ class Insert_at_end{
     public static class linkedlist{
         node head=null;
         node tail=null;
-        public void insert(int data){
-        node temp=new node(data);
-        if(head==null){
-            head=temp;
+        void insert(int data){
+            node temp=new node(data);
+            if(head==null){
+                head=tail=temp;
+            }
+            else{
+                temp.next=head;
+                head=temp;
+            }
         }
-        else{
-            tail.next=temp;
-        }
-        tail=temp;
-       }
-
 
         void display(){
             node temp=head;
