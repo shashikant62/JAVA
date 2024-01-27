@@ -45,7 +45,6 @@ class Delete_node{
         ll.insert(3);
         ll.insert(4);
         ll.insert(5);
-        ll.display();
         ll.delete(3);
         ll.display();
     }
