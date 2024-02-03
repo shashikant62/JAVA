@@ -29,6 +29,13 @@ class Insert_at_head{
             }
             System.out.print(" null");
         }
+        public int get(int index) {
+        node temp=head;
+        for(int i=0;i<index;i++){
+            temp=temp.next;
+        }
+        return temp.data;
+    }
     }
     public static void main(String args[]){
 
@@ -39,5 +46,6 @@ class Insert_at_head{
         ll.insert(4);
         ll.insert(5);
         ll.display();
+        System.out.println(ll.get(4));
     }
 }

@@ -29,13 +29,8 @@ class Delete_node{
             }
              System.out.println("null");
         }
-        public void delete(int idx){
-            node temp=head;
-            for(int i=0;i<idx-2;i++){
-                temp=temp.next;
-            }
-            temp.next=temp.next.next;
-        }
+
+    }
     }
 
     public static void main(String args[]){
@@ -45,7 +40,8 @@ class Delete_node{
         ll.insert(3);
         ll.insert(4);
         ll.insert(5);
-        ll.delete(3);
+        ll.display();
+        ll.addAtIndex(0,45);
         ll.display();
     }
 }
