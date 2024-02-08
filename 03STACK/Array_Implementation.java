@@ -10,7 +10,8 @@ class Array_Implementation{
             }
             else{
             arr[idx]=val;
-            idx++;}
+            idx++;
+        }
         }
 
         int pop(){
