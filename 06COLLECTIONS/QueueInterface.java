@@ -2,6 +2,7 @@ import java.util.*;
 class QueueInterface{
     static void LinkedListExample(){
         Queue<Integer>d=new LinkedList<>();
+        Queue<Integer> pQueue= new PriorityQueue<Integer>();
         d.add(1);
         d.add(2);
         d.add(3);
